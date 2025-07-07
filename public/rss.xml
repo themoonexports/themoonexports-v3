@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Moon Exports - Product Updates</title>
+    <description>Latest product updates and new arrivals from The Moon Exports - Premium handicrafts exporter from Sambhal, India</description>
+    <link>https://www.themoonexports.com</link>
+    <atom:link href="https://www.themoonexports.com/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jul 2025 12:00:00 GMT</lastBuildDate>
+    <managingEditor>info@themoonexports.com (Kamran Khan)</managingEditor>
+    <webMaster>info@themoonexports.com (The Moon Exports)</webMaster>
+    <category>Handicrafts</category>
+    <category>Export</category>
+    <category>Buffalo Horn</category>
+    <category>Wooden Crafts</category>
+    <category>Resin Products</category>
+    <image>
+      <url>https://www.themoonexports.com/images/logo.png</url>
+      <title>The Moon Exports</title>
+      <link>https://www.themoonexports.com</link>
+      <description>Premium handicrafts exporter from Sambhal, India</description>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    
+    <item>
+      <title>New Buffalo Horn Plates Collection Available</title>
+      <description>Discover our latest collection of premium buffalo horn plates in brown, black, and light colors. Perfect for restaurants and luxury dining.</description>
+      <link>https://www.themoonexports.com/buffalo-horn-plates</link>
+      <guid isPermaLink="true">https://www.themoonexports.com/buffalo-horn-plates</guid>
+      <pubDate>Tue, 08 Jul 2025 10:00:00 GMT</pubDate>
+      <category>Buffalo Horn</category>
+      <category>Plates</category>
+    </item>
+    
+    <item>
+      <title>Handcrafted Buffalo Horn Bowls - Natural Antibacterial Properties</title>
+      <description>Our buffalo horn bowls feature natural antibacterial properties and unique grain patterns. Ideal for food service and decorative use.</description>
+      <link>https://www.themoonexports.com/buffalo-horn-bowls</link>
+      <guid isPermaLink="true">https://www.themoonexports.com/buffalo-horn-bowls</guid>
+      <pubDate>Mon, 07 Jul 2025 14:00:00 GMT</pubDate>
+      <category>Buffalo Horn</category>
+      <category>Bowls</category>
+    </item>
+    
+    <item>
+      <title>Horn Accessories - Jewelry and Fashion Items</title>
+      <description>Explore our extensive collection of horn accessories including bracelets, pendants, and fashion jewelry. Each piece uniquely crafted.</description>
+      <link>https://www.themoonexports.com/horn-accessories</link>
+      <guid isPermaLink="true">https://www.themoonexports.com/horn-accessories</guid>
+      <pubDate>Sun, 06 Jul 2025 16:00:00 GMT</pubDate>
+      <category>Horn Accessories</category>
+      <category>Jewelry</category>
+    </item>
+    
+  </channel>
+</rss>

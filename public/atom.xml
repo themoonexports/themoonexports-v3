@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://www.themoonexports.com/</id>
+  <title>The Moon Exports - News Feed</title>
+  <subtitle>Latest news and updates from The Moon Exports - Premium handicrafts exporter from Sambhal, India</subtitle>
+  <link href="https://www.themoonexports.com/atom.xml" rel="self"/>
+  <link href="https://www.themoonexports.com/"/>
+  <updated>2025-07-08T12:00:00Z</updated>
+  <author>
+    <name>Kamran Khan</name>
+    <email>info@themoonexports.com</email>
+  </author>
+  <generator uri="https://www.themoonexports.com/" version="1.0">The Moon Exports Website</generator>
+  <icon>https://www.themoonexports.com/images/logo.png</icon>
+  <logo>https://www.themoonexports.com/images/logo.png</logo>
+  <rights>Copyright 2015-2025 The Moon Exports. All rights reserved.</rights>
+  
+  <entry>
+    <id>https://www.themoonexports.com/buffalo-horn-plates</id>
+    <title>Premium Buffalo Horn Plates - Latest Collection</title>
+    <link href="https://www.themoonexports.com/buffalo-horn-plates"/>
+    <updated>2025-07-08T10:00:00Z</updated>
+    <summary>Discover our latest collection of premium buffalo horn plates in various natural colors and finishes. Perfect for fine dining establishments and luxury tableware.</summary>
+    <category term="buffalo-horn" label="Buffalo Horn"/>
+    <category term="tableware" label="Tableware"/>
+  </entry>
+  
+  <entry>
+    <id>https://www.themoonexports.com/buffalo-horn-bowls</id>
+    <title>Natural Antibacterial Buffalo Horn Bowls</title>
+    <link href="https://www.themoonexports.com/buffalo-horn-bowls"/>
+    <updated>2025-07-07T14:00:00Z</updated>
+    <summary>Our handcrafted buffalo horn bowls offer natural antibacterial properties and stunning grain patterns. Ideal for restaurants, hotels, and decorative use.</summary>
+    <category term="buffalo-horn" label="Buffalo Horn"/>
+    <category term="bowls" label="Bowls"/>
+  </entry>
+  
+</feed>

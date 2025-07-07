@@ -1,0 +1,57 @@
+User-agent: *
+Allow: /
+
+# Priority pages - Buffalo Horn Authority since 2015
+Allow: /buffalo-horn-plates
+Allow: /horn-crafts  
+Allow: /buffalo-horn-bowls
+Allow: /horn-accessories
+Allow: /horn-decor
+
+# Disallow non-essential directories
+Disallow: /calendar/
+Disallow: /junk/
+Disallow: /*.pdf$
+Disallow: /backup/
+Disallow: /temp/
+Disallow: /data/
+Disallow: /personal/
+Disallow: /scripts/
+Disallow: /_next/
+Disallow: /api/
+
+# Search Engine Optimization - Established 2015
+Sitemap: https://www.themoonexports.com/sitemap.xml
+
+# Buffalo Horn Authority - Website Version 3.0
+# Company: The Moon Exports
+# Established: 2015
+# Specialty: Buffalo Horn Handicrafts
+# Location: Sambhal, Moradabad, India
+
+# Crawl-delay for specific bots
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 1
+
+# Allow access to CSS and JS for better rendering
+Allow: /css/
+Allow: /js/
+Allow: /_next/static/
+
+# Additional feeds for content discovery
+Sitemap: https://www.themoonexports.com/rss.xml
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+User-agent: Bingbot
+Allow: /css/
+Allow: /js/
+Allow: /images/
