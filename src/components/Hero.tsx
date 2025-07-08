@@ -1,48 +1,47 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const slides = [
   {
     id: 1,
     image: '/images/one.jpg',
-    title: 'The Truth is The Everlasting',
-    subtitle: 'The Moon Exports',
-    description: 'Premium handicrafts manufacturer and exporter since 2015',
-    cta: 'Enquiry',
-    ctaLink: '/contact',
+    title: 'The Moon Exports',
+    subtitle: 'Premium Handicrafts Since 2015',
+    description: 'Buffalo horn, wooden crafts, and resin products from Sambhal, India',
+    cta: 'View Products',
+    ctaLink: '/products',
   },
   {
     id: 2,
     image: '/images/hero-slide-2.jpg',
     title: 'Handcrafted Excellence',
-    subtitle: 'Buffalo Horn & Wooden Crafts',
-    description: 'Authentic handicrafts from Sambhal, Moradabad, India',
-    cta: 'View Products',
-    ctaLink: '/products',
+    subtitle: 'Traditional Craftsmanship',
+    description: 'Authentic handicrafts exported worldwide with premium quality',
+    cta: 'Contact Us',
+    ctaLink: '/contact',
   },
 ];
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+    return () => clearInterval(timer);
+  }, []);
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-96 overflow-hidden">
       {/* Carousel Container */}
       <div className="relative h-full">
         {slides.map((slide, index) => (
@@ -63,19 +62,19 @@ export default function Hero() {
             
             {/* Content */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white px-4 max-w-4xl">
-                <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
+              <div className="text-center text-white px-4 max-w-3xl">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
                   {slide.title}
                 </h1>
-                <h2 className="text-2xl md:text-3xl mb-6 text-shadow-md">
+                <h2 className="text-xl md:text-2xl mb-4">
                   {slide.subtitle}
                 </h2>
-                <p className="text-lg md:text-xl mb-8 text-shadow-sm">
+                <p className="text-lg mb-8">
                   {slide.description}
                 </p>
                 <Link
                   href={slide.ctaLink}
-                  className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300"
                 >
                   {slide.cta}
                 </Link>
@@ -85,24 +84,8 @@ export default function Hero() {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-300"
-        aria-label="Previous slide"
-      >
-        <ChevronLeftIcon className="h-6 w-6" />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full transition-all duration-300"
-        aria-label="Next slide"
-      >
-        <ChevronRightIcon className="h-6 w-6" />
-      </button>
-
       {/* Indicators */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
