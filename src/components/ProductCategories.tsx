@@ -24,23 +24,23 @@ const categories = [
 
 export default function ProductCategories() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-12 bg-gray-50">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">
             Our Product Categories
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
+          <p className="mt-3 text-base leading-7 text-gray-600">
             Discover our range of premium handcrafted products made with traditional techniques
           </p>
         </div>
         
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {categories.map((category) => (
             <div key={category.name} className="group relative">
               <Link href={category.href} className="block">
-                <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-105">
-                  <div className="relative h-80 w-full">
+                <div className="relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 group-hover:shadow-lg group-hover:scale-105">
+                  <div className="relative h-64 w-full">
                     <Image
                       src={category.image}
                       alt={category.name}
@@ -52,7 +52,7 @@ export default function ProductCategories() {
                     {/* Category Title Overlay */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center text-white">
-                        <h3 className="text-2xl font-bold mb-2 drop-shadow-lg">
+                        <h3 className="text-xl font-bold mb-2 drop-shadow-lg">
                           {category.name}
                         </h3>
                         <p className="text-sm opacity-90 drop-shadow-md px-4">

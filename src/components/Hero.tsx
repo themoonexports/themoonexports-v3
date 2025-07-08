@@ -42,7 +42,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-96 lg:h-[500px] overflow-hidden">
       {/* Carousel Container */}
       <div className="relative h-full">
         {slides.map((slide, index) => (
@@ -64,18 +64,18 @@ export default function Hero() {
             {/* Content */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white px-4 max-w-4xl">
-                <h1 className="text-4xl md:text-6xl font-bold mb-4 text-shadow-lg">
+                <h1 className="text-3xl md:text-5xl font-bold mb-3 text-shadow-lg">
                   {slide.title}
                 </h1>
-                <h2 className="text-2xl md:text-3xl mb-6 text-shadow-md">
+                <h2 className="text-xl md:text-2xl mb-4 text-shadow-md">
                   {slide.subtitle}
                 </h2>
-                <p className="text-lg md:text-xl mb-8 text-shadow-sm">
+                <p className="text-base md:text-lg mb-6 text-shadow-sm">
                   {slide.description}
                 </p>
                 <Link
                   href={slide.ctaLink}
-                  className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full transition-colors duration-300 shadow-lg hover:shadow-xl"
+                  className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
                 >
                   {slide.cta}
                 </Link>
